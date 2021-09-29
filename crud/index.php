@@ -47,7 +47,6 @@ style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
 					<center>
 						<h4 class="card-title">Cadastrar - Agendamento de Potenciais Clientes</h4>
 						<p class="card-text">Sistema utilizado para agendamento de serviços.</p>
-					</center>
 					<p>
 					<form method="post" action="controllerCadastro.php?" id="form" name="form">
 					<div class="form-group">
