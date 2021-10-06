@@ -30,11 +30,11 @@ style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 					<ul class="navbar-nav">
 						<li class="nav-item active">
-							<a class="nav-link" href="index.html"> Cadastrar <span class="sr-only">(current)</span>
+							<a class="nav-link" href="index.php"> Cadastrar <span class="sr-only">(current)</span>
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="consulta.html">Consultar</a>
+							<a class="nav-link" href="consulta.php">Consultar</a>
 						</li>
 					</ul>
 				</div>
@@ -44,7 +44,7 @@ style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
 		<div class="row">
 			<div class="card mb-3 col-12">
 				<div class="card-body">
-					<center>
+					
 						<h4 class="card-title">Cadastrar - Agendamento de Potenciais Clientes</h4>
 						<p class="card-text">Sistema utilizado para agendamento de serviços.</p>
 					<p>
@@ -76,7 +76,7 @@ style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
 								<label for="exampleFormControlTextarea1">Observação</label>
 								<textarea class="form-control" name="txtObservacao" id="txtObservacao" rows="3"></textarea>
 							</div>
-							<button type="submit" id="btnInserir" class="btn btn-primary">Cadastrar</button>
+							<button type="button" id="btnInserir" class="btn btn-primary">Cadastrar</button>
 					</form>
 					</p>
 				</div>

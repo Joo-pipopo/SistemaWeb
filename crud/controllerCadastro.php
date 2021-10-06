@@ -26,5 +26,33 @@ class controllerCadastro{
             echo "<script>alert('Erro ao gravar registro!');</script>";
         }
     }
+
+    public function listar($id){
+		return $result = $this->cadastro->listar($id);
+	}
+
+    private function editar($id){
+        $this->cadastro->setId($id);
+        $this->cadastro->setNome($_POST['txtNome']);
+        $this->cadastro->setTelefone($_POST['txtTelefone']);
+        $this->cadastro->setOrigem($_POST['txtOrigem']);
+        $this->cadastro->setData_contato(date('Y-m-d',strtotime($_POST['txtDataContato'])));
+        $this->cadastro->setObservacao($_POST['txtObservacao']);
+        $result = $this->cadastro->editar();
+        if($result >= 1){
+            echo "<script>alert('Registro alterado com sucesso!');document.location='consultar.php'</script>";
+        }else{
+            echo "<script>alert('Erro ao alterar o registro!');</script>";
+        }
+    }
+
+    public function excluir($id){
+		$result = $this->cadastro->excluir($id);
+		if($result >= 1){
+            echo "<script>alert('Registro alterado com sucesso!');document.location='consultar.php'</script>";
+        }else{
+            echo "<script>alert('Erro ao alterar o registro!');</script>";
+        }
+	}
 }
 new controllerCadastro();

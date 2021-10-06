@@ -1,3 +1,6 @@
+<?php
+require_once("controllerCadastro.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,10 +58,29 @@
                         </tr>
                     </thead>
                     <thead id="TableData">
-
+                    <?php
+						     $controller = new ControllerCadastro();
+						    	$resultado = $controller->listar(0);
+						  	for($i=0;$i<count($resultado);$i++){ 
+						?>
                     </thead>
+
+                    <tr>
+									<td scope="col"><?php echo $resultado[$i]['nome']; ?></td>
+									<td scope="col"><?php echo $resultado[$i]['telefone']; ?></td>
+									<td scope="col"><?php echo $resultado[$i]['origem']; ?></td>
+									<td scope="col"><?php echo $resultado[$i]['data_contato']; ?></td>
+									<td scope="col"><?php echo $resultado[$i]['observacao']; ?></td>
+									<td scope="col">
+										<button type="button" class="btn btn-outline-primary" onclick="location.href='editar.php?id=<?php echo $resultado[$i]['id']; ?>'" style="width: 72px;">Editar</button>
+										<button type="button" class="btn btn-outline-primary" onclick="javascript:confirmDelete('excluir.php?id=<?php echo $resultado[$i]['id']; ?>')" style="width: 72px;">Excluir</button>
+									</td>
+								</tr>
+                <?php
+							}
+						?>
+
                 </table>
-                <button type="button" id="btnListar" class="btn btn-primary">Buscar Agendamento</button>
             </div>
         </div>
     </div>
