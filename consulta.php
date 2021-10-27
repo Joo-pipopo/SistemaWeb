@@ -8,8 +8,6 @@ require_once("controllerCadastro.php");
 	<meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover"> <meta name="color-scheme" content="light dark"> 
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css"> 
 	<link rel="stylesheet" href="css/estilo.css">
-	<script src="js/jquery.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
     <script>
 		function confirmDelete(delUrl) {
   			if (confirm("Deseja apagar o registro?")) {

@@ -10,9 +10,7 @@
 	<meta name="color-scheme" content="light dark">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="css/estilo.css">
-	<script src="js/jquery.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
-	<script src="js/funcoes.js"></script>
+
 	<title>Sistema de Agendamento - Clientes</title>
 </head>
 

@@ -11,9 +11,6 @@ require_once("controllerCadastro.php");
 	<meta name="color-scheme" content="light dark">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" href="css/estilo.css">
-	<script src="js/jquery.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
-	<script src="js/funcoes.js"></script>
 	<title>Sistema de Agendamento - Clientes</title>
 </head>
 
@@ -76,7 +73,7 @@ require_once("controllerCadastro.php");
 								<label for="exampleFormControlTextarea1">Observação</label>
 								<textarea class="form-control" name="txtObservacao" id="txtObservacao" rows="3"><?php echo $resultado[0]['observacao']; ?></textarea>
 							</div>
-							<button type="button" id="btnInserir" class="btn btn-primary">Editar</button>
+							<button type="submit" id="btnInserir" class="btn btn-primary">Editar</button>
 						</form>
 					</p>
 				</div>
