@@ -42,7 +42,7 @@ class controllerCadastro{
         $this->cadastro->setObservacao($_POST['txtObservacao']);
         $result = $this->cadastro->editar();
         if($result >= 1){
-            echo "<script>alert('Registro alterado com sucesso!');document.location='consultar.php'</script>";
+            echo "<script>alert('Registro alterado com sucesso!');document.location='consulta.php'</script>";
         }else{
             echo "<script>alert('Erro ao alterar o registro!');</script>";
         }
@@ -51,7 +51,7 @@ class controllerCadastro{
     public function excluir($id){
 		$result = $this->cadastro->excluir($id);
 		if($result >= 1){
-            echo "<script>alert('Registro alterado com sucesso!');document.location='consultar.php'</script>";
+            echo "<script>alert('Registro alterado com sucesso!');document.location='consulta.php'</script>";
         }else{
             echo "<script>alert('Erro ao alterar o registro!');</script>";
         }

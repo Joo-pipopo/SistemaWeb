@@ -47,7 +47,6 @@ require_once("controllerCadastro.php");
 						<?php
 							$controller = new controllerCadastro();
 							$resultado = $controller->listar($_GET['id']);
-							//print_r($resultado);
 						?>
 						<form method="post" action="controllerCadastro.php?funcao=editar&id=<?php echo $resultado[0]['id']; ?>" id="form" name="form">
 							<div class="form-group">
@@ -77,7 +76,7 @@ require_once("controllerCadastro.php");
 								<label for="exampleFormControlTextarea1">Observação</label>
 								<textarea class="form-control" name="txtObservacao" id="txtObservacao" rows="3"><?php echo $resultado[0]['observacao']; ?></textarea>
 							</div>
-							<button type="submit" id="btnInserir" class="btn btn-primary">Editar</button>
+							<button type="button" id="btnInserir" class="btn btn-primary">Editar</button>
 						</form>
 					</p>
 				</div>
